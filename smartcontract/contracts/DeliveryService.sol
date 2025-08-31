@@ -58,7 +58,7 @@ contract DeliveryService is ReentrancyGuard {
         _;
     }
     
-    function createRequest(
+    function createDeliveryRequest(
         string calldata _description,
         string calldata _pickupLocation,
         string calldata _dropoffLocation,
@@ -87,7 +87,7 @@ contract DeliveryService is ReentrancyGuard {
         emit Data.RequestCreated(requestId, msg.sender, _description, _amount);
     }
     
-    function updateRequest(
+    function updateDeliveryRequest(
         uint256 _requestId,
         string calldata _description,
         string calldata _pickupLocation,

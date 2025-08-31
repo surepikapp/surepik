@@ -14,7 +14,7 @@ contract DriverRegistry {
     address[] public driverList;
     mapping(address => uint256) private driverIndex;
     
-    function registerDriver() external {
+    function registerDrivers() external {
         if (registeredDrivers[msg.sender]) revert Data.DriverAlreadyRegistered();
         
         registeredDrivers[msg.sender] = true;
@@ -28,7 +28,7 @@ contract DriverRegistry {
         emit Data.DriverRegistered(msg.sender);
     }
     
-    function setDriverAvailability(bool _available) external {
+    function setDriversAvailability(bool _available) external {
         if (!registeredDrivers[msg.sender]) revert Data.DriverNotRegistered();
         
         driverAvailable[msg.sender] = _available;

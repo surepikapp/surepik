@@ -1,0 +1,7 @@
+{
+  "Deploy#DriverRegistry": "0x114409A757403A9c237a36c1a4160AF9ceb50cDa",
+  "Deploy#MockStablecoin": "0x8aFc399457889DF696B9F60398f855cb6FD926E1",
+  "Deploy#ReputationNFT": "0x09EC71bf820895E61C03F1c0b3E3d37e0A791db5",
+  "Deploy#DeliveryService": "0x896D8509A351ef07E0d29f816dc04D0426b7d7F7",
+  "Deploy#Faucet": "0xDd82cE54d41A698f08E60DE6217140f44A2B8143"
+}
