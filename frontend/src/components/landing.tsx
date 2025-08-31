@@ -506,6 +506,91 @@ export default function SurepikLanding() {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="py-32 bg-gradient-to-b from-slate-900 to-black relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-r from-emerald-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-orange-500/20 to-emerald-500/20 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
+          <div className="mb-12">
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight font-display">
+              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">Transform</span> Delivery?
+            </h2>
+            <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+              Join thousands of users and drivers already experiencing the future of delivery
+            </p>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <button 
+              onClick={() => navigate('/user')}
+              className="group relative px-10 py-4 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-2xl font-bold text-lg shadow-2xl shadow-emerald-500/25 hover:shadow-emerald-500/40 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-blue-400 rounded-2xl blur opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative flex items-center gap-3">
+                <Smartphone className="w-5 h-5" />
+                <span>Start Ordering</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </div>
+            </button>
+            
+            <button 
+              onClick={() => navigate('/rider')}
+              className="group relative px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-2xl font-bold text-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+            >
+              <div className="flex items-center gap-3">
+                <Users className="w-5 h-5" />
+                <span>Become a Driver</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </div>
+            </button>
+          </div>
+          
+          {/* Trust Indicators */}
+          <div className="mt-16 pt-16 border-t border-white/10">
+            <p className="text-white/60 text-sm mb-6">Trusted by industry leaders</p>
+            <div className="flex justify-center items-center gap-8 opacity-60">
+              <div className="text-white/40 text-lg font-semibold">Polygon</div>
+              <div className="text-white/40 text-lg font-semibold">USDC</div>
+              <div className="text-white/40 text-lg font-semibold">Web3</div>
+              <div className="text-white/40 text-lg font-semibold">DeFi</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-black text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex items-center gap-3 mb-6 md:mb-0">
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center">
+                <img src="/logo.svg" alt="SurePik Logo" className="w-8 h-8 filter brightness-0 invert" />
+              </div>
+              <div className="text-2xl font-bold">
+                Sure<span className="text-emerald-400">Pik</span>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-6 sm:gap-8 text-white/60 text-sm sm:text-base">
+              <a href="#" className="hover:text-emerald-400 transition-colors duration-300">Privacy</a>
+              <a href="#" className="hover:text-emerald-400 transition-colors duration-300">Terms</a>
+              <a href="#" className="hover:text-emerald-400 transition-colors duration-300">Support</a>
+              <a href="#" className="hover:text-emerald-400 transition-colors duration-300">Blog</a>
+            </div>
+          </div>
+          
+          <div className="mt-8 pt-8 border-t border-white/10 text-center">
+            <p className="text-white/60 text-sm">
+              ©️ 2025 SurePik. Revolutionizing delivery with blockchain technology.
+            </p>
+          </div>
+        </div>
+      </footer>
+
 
     </div>
   );
